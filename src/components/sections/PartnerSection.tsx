@@ -60,7 +60,7 @@ const PartnerSection = ({ partnerInfo }: PartnerSectionProps) => {
         <AnimatedSection animation="fadeIn">
           <h2
             id="partner-section-title"
-            className="text-lg sm:text-xl lg:text-2xl font-bold text-[#3791e2] text-center mb-8"
+            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#3791e2] text-center mb-8"
           >
             共創パートナー募集
           </h2>
@@ -86,7 +86,7 @@ const PartnerSection = ({ partnerInfo }: PartnerSectionProps) => {
                         className="w-4 h-4 sm:w-5 sm:h-5 text-[#3791e2] mr-2 sm:mr-3 flex-shrink-0"
                         aria-hidden="true"
                       />
-                      <h3 className="text-xs sm:text-sm lg:text-base font-semibold text-gray-900">
+                      <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-900">
                         {box.title}
                       </h3>
                     </div>
@@ -94,7 +94,7 @@ const PartnerSection = ({ partnerInfo }: PartnerSectionProps) => {
                       {box.items.map((item, itemIndex) => (
                         <li
                           key={itemIndex}
-                          className="text-[10px] sm:text-xs lg:text-sm text-gray-700 flex items-start"
+                          className="text-sm sm:text-base lg:text-lg text-gray-700 flex items-start"
                         >
                           <span
                             className="text-[#f97d0b] mr-2 flex-shrink-0 leading-none mt-1"
@@ -119,7 +119,7 @@ const PartnerSection = ({ partnerInfo }: PartnerSectionProps) => {
               text="まずは担当者と話す"
               href="#cta"
               variant="primary"
-              size="sm"
+              size="md"
             />
           </div>
         </AnimatedSection>

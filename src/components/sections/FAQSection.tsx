@@ -46,7 +46,7 @@ const FAQSection = ({ faqs }: FAQSectionProps) => {
         <AnimatedSection animation="fadeIn">
           <h2
             id="faq-section-title"
-            className="text-lg sm:text-xl lg:text-2xl font-bold text-center mb-8 text-[#3791e2]"
+            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 text-[#3791e2]"
           >
             よくある質問
           </h2>
@@ -70,7 +70,7 @@ const FAQSection = ({ faqs }: FAQSectionProps) => {
                     aria-controls={`faq-answer-${index}`}
                     className="w-full px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between text-left transition-colors hover:bg-gray-50 min-h-[44px] touch-manipulation"
                   >
-                    <span className="text-[8px] sm:text-[10px] lg:text-xs font-semibold text-gray-900 pr-4">
+                    <span className="text-xs sm:text-sm lg:text-base font-semibold text-gray-900 pr-4">
                       {faq.question}
                     </span>
                     <motion.div
@@ -94,7 +94,7 @@ const FAQSection = ({ faqs }: FAQSectionProps) => {
                         role="region"
                         aria-labelledby={`faq-question-${index}`}
                       >
-                        <div className="px-4 sm:px-6 pb-3 sm:pb-4 pt-2 text-[10px] sm:text-[8px] lg:text-[10px] text-gray-700 leading-relaxed">
+                        <div className="px-4 sm:px-6 pb-3 sm:pb-4 pt-2 text-sm sm:text-xs lg:text-sm text-gray-700 leading-relaxed">
                           {faq.answer}
                         </div>
                       </motion.div>

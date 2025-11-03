@@ -35,11 +35,11 @@ const HeroSection = ({
         >
           <h1
             id="hero-title"
-            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight drop-shadow-lg"
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight drop-shadow-lg"
           >
             {title}
           </h1>
-          <p className="text-sm sm:text-base text-white mb-6 sm:mb-8 leading-relaxed drop-shadow-lg">
+          <p className="text-lg sm:text-xl text-white mb-6 sm:mb-8 leading-relaxed drop-shadow-lg">
             {subtitle}
           </p>
           <div className="flex justify-center">

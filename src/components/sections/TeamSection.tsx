@@ -21,7 +21,7 @@ const TeamSection = ({ members }: TeamSectionProps) => {
         <AnimatedSection animation="fadeIn">
           <h2
             id="team-section-title"
-            className="text-lg sm:text-xl lg:text-2xl font-bold text-[#3791e2] text-center mb-8"
+            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#3791e2] text-center mb-8"
           >
             私たちのチーム
           </h2>
@@ -34,14 +34,14 @@ const TeamSection = ({ members }: TeamSectionProps) => {
                 <div
                   key={member.name}
                   data-testid={`member-card-${index}`}
-                  className="bg-white rounded-xl p-3 sm:p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full flex flex-col border-t-4 border-[#3791e2]"
+                  className="bg-white rounded-xl p-4 sm:p-6 lg:p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full flex flex-col border-t-4 border-[#3791e2]"
                 >
                   {/* Name & Role Header */}
                   <div className="mb-2 sm:mb-3">
-                    <h3 className="text-xs font-bold text-gray-900 text-center mb-0 whitespace-nowrap overflow-hidden text-ellipsis">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 text-center mb-0 whitespace-nowrap overflow-hidden text-ellipsis">
                       {member.name}
                     </h3>
-                    <p className="text-[10px] text-[#f97d0b] font-semibold text-center whitespace-nowrap">
+                    <p className="text-base sm:text-lg lg:text-xl text-[#f97d0b] font-semibold text-center whitespace-nowrap">
                       {member.role}
                     </p>
                   </div>
@@ -51,7 +51,7 @@ const TeamSection = ({ members }: TeamSectionProps) => {
                     {member.bio.map((bioItem, bioIndex) => (
                       <p
                         key={bioIndex}
-                        className="text-gray-700 text-[8px] leading-tight"
+                        className="text-gray-700 text-base sm:text-lg lg:text-xl leading-tight"
                       >
                         {bioItem}
                       </p>

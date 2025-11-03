@@ -56,7 +56,7 @@ const CTASection = () => {
         <AnimatedSection animation="fadeIn">
           <h2
             id="cta-section-title"
-            className="text-lg sm:text-xl lg:text-2xl font-bold text-[#3791e2] text-center mb-8"
+            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#3791e2] text-center mb-8"
           >
             お問合せ
           </h2>
@@ -74,7 +74,7 @@ const CTASection = () => {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-[9px] sm:text-[10px] lg:text-xs font-semibold text-gray-700 mb-1.5"
+                  className="block text-sm sm:text-sm lg:text-base font-semibold text-gray-700 mb-1.5"
                 >
                   お名前 <span className="text-red-500">*</span>
                 </label>
@@ -86,7 +86,7 @@ const CTASection = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full pl-8 sm:pl-10 pr-3 py-2 text-[9px] sm:text-[10px] lg:text-xs border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3791e2] focus:border-transparent transition-all"
+                    className="w-full pl-8 sm:pl-10 pr-3 py-2 text-sm sm:text-sm lg:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3791e2] focus:border-transparent transition-all"
                     placeholder="山田 太郎"
                     required
                   />
@@ -97,7 +97,7 @@ const CTASection = () => {
               <div>
                 <label
                   htmlFor="company"
-                  className="block text-[9px] sm:text-[10px] lg:text-xs font-semibold text-gray-700 mb-1.5"
+                  className="block text-sm sm:text-sm lg:text-base font-semibold text-gray-700 mb-1.5"
                 >
                   会社名 <span className="text-red-500">*</span>
                 </label>
@@ -109,7 +109,7 @@ const CTASection = () => {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full pl-8 sm:pl-10 pr-3 py-2 text-[9px] sm:text-[10px] lg:text-xs border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3791e2] focus:border-transparent transition-all"
+                    className="w-full pl-8 sm:pl-10 pr-3 py-2 text-sm sm:text-sm lg:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3791e2] focus:border-transparent transition-all"
                     placeholder="株式会社〇〇"
                     required
                   />
@@ -120,7 +120,7 @@ const CTASection = () => {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-[9px] sm:text-[10px] lg:text-xs font-semibold text-gray-700 mb-1.5"
+                  className="block text-sm sm:text-sm lg:text-base font-semibold text-gray-700 mb-1.5"
                 >
                   メールアドレス <span className="text-red-500">*</span>
                 </label>
@@ -132,7 +132,7 @@ const CTASection = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full pl-8 sm:pl-10 pr-3 py-2 text-[9px] sm:text-[10px] lg:text-xs border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3791e2] focus:border-transparent transition-all"
+                    className="w-full pl-8 sm:pl-10 pr-3 py-2 text-sm sm:text-sm lg:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3791e2] focus:border-transparent transition-all"
                     placeholder="example@company.com"
                     required
                   />
@@ -143,7 +143,7 @@ const CTASection = () => {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-[9px] sm:text-[10px] lg:text-xs font-semibold text-gray-700 mb-1.5"
+                  className="block text-sm sm:text-sm lg:text-base font-semibold text-gray-700 mb-1.5"
                 >
                   お問合せ内容 <span className="text-red-500">*</span>
                 </label>
@@ -166,7 +166,7 @@ const CTASection = () => {
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="bg-[#f97d0b] text-white text-[10px] sm:text-xs lg:text-sm font-semibold py-1.5 sm:py-2 px-6 sm:px-8 lg:px-10 rounded-lg hover:bg-[#e06d00] transition-all duration-300 transform hover:scale-[1.02] shadow-md hover:shadow-lg min-h-[36px] touch-manipulation"
+                  className="bg-[#f97d0b] text-white text-sm sm:text-base lg:text-lg font-semibold py-1.5 sm:py-2 px-6 sm:px-8 lg:px-10 rounded-lg hover:bg-[#e06d00] transition-all duration-300 transform hover:scale-[1.02] shadow-md hover:shadow-lg min-h-[36px] touch-manipulation"
                   aria-label="お問合せを送信"
                 >
                   送信する

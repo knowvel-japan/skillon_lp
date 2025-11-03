@@ -36,7 +36,7 @@ const FeaturesSection = ({
           <div className="text-center mb-8 sm:mb-10">
             <h2
               id="features-section-title"
-              className="text-lg sm:text-xl lg:text-2xl font-bold text-[#3791e2] mb-3"
+              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#3791e2] mb-3"
             >
               SkillONの主な特徴
             </h2>
@@ -74,7 +74,7 @@ const FeaturesSection = ({
               style={{
                 willChange: "transform",
               }}
-              className="bg-white border border-gray-200 rounded-xl p-3 sm:p-4 shadow-sm hover:shadow-lg transition-shadow duration-300 flex-1 min-w-0"
+              className="bg-white border border-gray-200 rounded-xl p-4 sm:p-6 lg:p-8 shadow-sm hover:shadow-lg transition-shadow duration-300 flex-1 min-w-0"
             >
               <div className="feature-card-content flex flex-row items-start gap-3 flex-1">
                 {/* Icon */}
@@ -92,11 +92,9 @@ const FeaturesSection = ({
                 <div className="flex-1 feature-text-content">
                   <style>{`
                     .feature-text-content h3 {
-                      font-size: 0.875rem;
                       text-align: left;
                     }
                     .feature-text-content p {
-                      font-size: 0.75rem;
                       text-align: left;
                     }
                     @media (min-width: 420px) {
@@ -104,22 +102,18 @@ const FeaturesSection = ({
                         width: 100%;
                       }
                       .feature-text-content h3 {
-                        font-size: 0.6875rem;
                         text-align: center;
                         margin-bottom: 0.5rem;
-                      }
-                      .feature-text-content p {
-                        font-size: 0.5625rem;
                       }
                     }
                   `}</style>
                   {/* Title */}
-                  <h3 className="font-bold text-gray-900 mb-1">
+                  <h3 className="font-bold text-gray-900 mb-1 text-lg sm:text-xl lg:text-2xl">
                     {feature.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed text-base sm:text-lg lg:text-xl">
                     {feature.description}
                   </p>
                 </div>
@@ -131,12 +125,12 @@ const FeaturesSection = ({
         {/* Comparison Table Section */}
         <AnimatedSection animation="slideUp" delay={0.4}>
           <div className="bg-[#edf8ff] rounded-2xl p-3 sm:p-6 lg:p-8">
-            <h3 className="text-[13px] sm:text-lg lg:text-xl font-bold text-[#3791e2] text-center mb-4 sm:mb-6">
+            <h3 className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#3791e2] text-center mb-4 sm:mb-6">
               他社との違い
             </h3>
-            <div className="overflow-x-auto">
-              <div className="inline-block min-w-full align-middle px-3 sm:px-0">
-                <table className="min-w-full bg-white rounded-lg sm:rounded-xl shadow-md overflow-hidden text-[7px] sm:text-[9px] lg:text-[10px]">
+            <div className="flex justify-center">
+              <div className="w-full max-w-[900px]">
+                <table className="w-full bg-white rounded-lg sm:rounded-xl shadow-md overflow-hidden text-sm sm:text-base lg:text-lg">
                   <thead>
                     <tr className="bg-[#3791e2] text-white">
                       <th className="py-2 px-1.5 sm:py-3 sm:px-3 lg:px-4 text-center font-semibold whitespace-nowrap">

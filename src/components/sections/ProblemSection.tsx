@@ -27,7 +27,7 @@ const ProblemSection = ({ problems, socialBenefit }: ProblemSectionProps) => {
           <div className="text-center mb-8 sm:mb-10">
             <h2
               id="problem-section-title"
-              className="text-lg sm:text-xl lg:text-2xl font-bold text-[#3791e2] mb-3"
+              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#3791e2] mb-3"
             >
               こんなお悩みありませんか？
             </h2>
@@ -60,7 +60,7 @@ const ProblemSection = ({ problems, socialBenefit }: ProblemSectionProps) => {
               <motion.div
                 key={index}
                 variants={slideUp}
-                className="bg-white border border-gray-200 rounded-xl p-3 sm:p-4 shadow-sm hover:shadow-lg transition-shadow duration-300 flex-1 min-w-0"
+                className="bg-white border border-gray-200 rounded-xl p-4 sm:p-6 lg:p-8 shadow-sm hover:shadow-lg transition-shadow duration-300 flex-1 min-w-0"
               >
                 <div className="problem-card-content flex flex-row items-start gap-3 flex-1">
                   <div
@@ -80,11 +80,9 @@ const ProblemSection = ({ problems, socialBenefit }: ProblemSectionProps) => {
                   <div className="flex-1 problem-text-content">
                     <style>{`
                       .problem-text-content h3 {
-                        font-size: 0.875rem;
                         text-align: left;
                       }
                       .problem-text-content p {
-                        font-size: 0.75rem;
                         text-align: left;
                       }
                       @media (min-width: 420px) {
@@ -92,19 +90,15 @@ const ProblemSection = ({ problems, socialBenefit }: ProblemSectionProps) => {
                           width: 100%;
                         }
                         .problem-text-content h3 {
-                          font-size: 0.6875rem;
                           text-align: center;
                           margin-bottom: 0.5rem;
                         }
-                        .problem-text-content p {
-                          font-size: 0.5625rem;
-                        }
                       }
                     `}</style>
-                    <h3 className="font-bold text-gray-900 mb-1">
+                    <h3 className="font-bold text-gray-900 mb-1 text-lg sm:text-xl lg:text-2xl">
                       {problem.title}
                     </h3>
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-gray-600 leading-relaxed text-base sm:text-lg lg:text-xl">
                       {problem.description}
                     </p>
                   </div>
@@ -135,7 +129,7 @@ const ProblemSection = ({ problems, socialBenefit }: ProblemSectionProps) => {
                 </svg>
               </div>
               <div>
-                <p className="text-xs sm:text-[9px] text-gray-700 leading-relaxed">
+                <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
                   {socialBenefit}
                 </p>
               </div>

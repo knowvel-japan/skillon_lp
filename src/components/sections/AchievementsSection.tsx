@@ -23,7 +23,7 @@ const AchievementsSection = ({ achievements }: AchievementsSectionProps) => {
         <AnimatedSection animation="fadeIn">
           <h2
             id="achievements-section-title"
-            className="text-lg sm:text-xl lg:text-2xl font-bold text-[#3791e2] text-center mb-8"
+            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#3791e2] text-center mb-8"
           >
             実績・採択プログラム
           </h2>
@@ -85,13 +85,13 @@ const AchievementsSection = ({ achievements }: AchievementsSectionProps) => {
 
                 {/* Year Badge */}
                 <div className="flex justify-center mb-2">
-                  <span className="inline-block bg-[#3791e2] text-white text-[10px] sm:text-xs font-semibold px-3 py-0.5 rounded-full">
+                  <span className="inline-block bg-[#3791e2] text-white text-sm sm:text-base font-semibold px-3 py-0.5 rounded-full">
                     {achievement.year}
                   </span>
                 </div>
 
                 {/* Program Name */}
-                <p className="text-[11px] sm:text-xs lg:text-sm font-bold text-gray-900 text-center">
+                <p className="text-base sm:text-base lg:text-lg font-bold text-gray-900 text-center">
                   {achievement.programName}
                 </p>
               </div>
