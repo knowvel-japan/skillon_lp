@@ -124,7 +124,7 @@ describe("ProblemSection", () => {
     });
 
     it("renders social benefit in a distinct box", () => {
-      const { container } = render(<ProblemSection {...defaultProps} />);
+      render(<ProblemSection {...defaultProps} />);
 
       const socialBenefitText = screen.getByText(
         /この課題を解決することで、日本の製造業の競争力/
@@ -137,7 +137,7 @@ describe("ProblemSection", () => {
     });
 
     it("social benefit box is visually emphasized", () => {
-      const { container } = render(<ProblemSection {...defaultProps} />);
+      render(<ProblemSection {...defaultProps} />);
 
       const socialBenefitText = screen.getByText(
         /この課題を解決することで、日本の製造業の競争力/

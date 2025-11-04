@@ -211,17 +211,7 @@ function App() {
         />
 
         {/* CTA Section */}
-        <CTASection
-          primaryCTA={{
-            text: "応募する",
-            link: "#apply",
-          }}
-          secondaryCTA={{
-            text: "担当者と話す",
-            link: "#contact",
-          }}
-          formType="inline"
-        />
+        <CTASection />
 
         {/* FAQ Section */}
         <FAQSection

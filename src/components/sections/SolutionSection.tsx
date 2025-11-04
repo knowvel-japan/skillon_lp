@@ -9,9 +9,9 @@ interface SolutionSectionProps {
 }
 
 const SolutionSection = ({
-  concept,
+  concept: _concept,
   highlights,
-  imagePlaceholder,
+  imagePlaceholder: _imagePlaceholder,
   beforeVideoUrl,
   afterVideoUrl,
 }: SolutionSectionProps) => {

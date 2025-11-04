@@ -211,7 +211,7 @@ describe("AchievementsSection", () => {
 
   describe("Card Structure", () => {
     it("each card has proper structure with logo, program name, year, and description", () => {
-      const { container } = render(<AchievementsSection {...defaultProps} />);
+      render(<AchievementsSection {...defaultProps} />);
 
       const firstProgramName = screen.getByText(
         "経済産業省 J-Startup プログラム"

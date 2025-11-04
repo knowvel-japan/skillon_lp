@@ -235,7 +235,7 @@ describe("TeamSection", () => {
 
   describe("Card Structure", () => {
     it("each card has proper structure with image, name, role, and bio", () => {
-      const { container } = render(<TeamSection {...defaultProps} />);
+      render(<TeamSection {...defaultProps} />);
 
       const firstMemberName = screen.getByText("山田太郎");
       const card = firstMemberName.closest('[data-testid*="member-card"]');
