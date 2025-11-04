@@ -1,14 +1,14 @@
-import HeroSection from "./components/sections/HeroSection";
-import ProblemSection from "./components/sections/ProblemSection";
-import SolutionSection from "./components/sections/SolutionSection";
-import FeaturesSection from "./components/sections/FeaturesSection";
-import PartnerSection from "./components/sections/PartnerSection";
-import TeamSection from "./components/sections/TeamSection";
-import AchievementsSection from "./components/sections/AchievementsSection";
-import CTASection from "./components/sections/CTASection";
-import FAQSection from "./components/sections/FAQSection";
-import Footer from "./components/sections/Footer";
-import { AlertCircle, Clock, Users } from "lucide-react";
+import HeroSection from "./components/sections/HeroSection"
+import ProblemSection from "./components/sections/ProblemSection"
+import SolutionSection from "./components/sections/SolutionSection"
+import FeaturesSection from "./components/sections/FeaturesSection"
+import PartnerSection from "./components/sections/PartnerSection"
+import TeamSection from "./components/sections/TeamSection"
+import AchievementsSection from "./components/sections/AchievementsSection"
+import CTASection from "./components/sections/CTASection"
+import FAQSection from "./components/sections/FAQSection"
+import Footer from "./components/sections/Footer"
+import { AlertCircle, Clock, Users } from "lucide-react"
 
 function App() {
   return (
@@ -48,15 +48,13 @@ function App() {
               icon: Clock,
               iconPath: `${import.meta.env.BASE_URL}images/ichininmae.svg`,
               title: "若手が育たない",
-              description:
-                "技能習得に時間がかかる。質問できず、自信をなくして辞めていく人も。",
+              description: "技能習得に時間がかかる。質問できず、自信をなくして辞めていく人も。",
             },
             {
               icon: Users,
               iconPath: `${import.meta.env.BASE_URL}images/kyoiku.svg`,
               title: "不揃いな教育",
-              description:
-                "現場任せの教育で標準化できていない。若手が育っているか判断できない。",
+              description: "現場任せの教育で標準化できていない。若手が育っているか判断できない。",
             },
           ]}
           socialBenefit="技術継承の課題は、日本の製造業や建設業において深刻化しています。2030年には熟練技術者の約30%が退職すると予測されており、早急な対策が求められています。"
@@ -140,11 +138,7 @@ function App() {
               "現場教育に課題を感じている企業",
               "技術継承を推進したい企業",
             ],
-            fields: [
-              "製造現場の作業教育",
-              "建設現場の安全教育",
-              "メンテナンス作業の技術継承",
-            ],
+            fields: ["製造現場の作業教育", "建設現場の安全教育", "メンテナンス作業の技術継承"],
             schedule: "2025年1月〜3月（3ヶ月間のPoC実施）",
             conditions: [
               "月1回のフィードバックミーティングへの参加",
@@ -158,7 +152,7 @@ function App() {
         <TeamSection
           members={[
             {
-              name: "梅田 旭太朗",
+              name: "梅田 虎太朗",
               role: "CEO",
               bio: [
                 "九州大学工学府量子物理学専攻修了。",
@@ -167,7 +161,7 @@ function App() {
               imagePlaceholder: "team-member-1",
             },
             {
-              name: "成瀬 大毅",
+              name: "成瀬 大輝",
               role: "CTO",
               bio: [
                 "東京大学情報理工学系研究科修了。",
@@ -176,7 +170,7 @@ function App() {
               imagePlaceholder: "team-member-2",
             },
             {
-              name: "鴇田 悠",
+              name: "鴇田 遥",
               role: "CAIO",
               bio: [
                 "京都大学情報学研究科修了。",
@@ -185,7 +179,7 @@ function App() {
               imagePlaceholder: "team-member-3",
             },
             {
-              name: "大野 亮太",
+              name: "小野寛太",
               role: "AI/ML",
               bio: [
                 "東京大学工学系研究科修了。",
@@ -202,8 +196,7 @@ function App() {
             {
               programName: "品川ソーシャルイノベーションアクセラレーター採択",
               year: "2025年",
-              description:
-                "品川区の社会課題解決を目指すスタートアップ支援プログラムに採択",
+              description: "品川区の社会課題解決を目指すスタートアップ支援プログラムに採択",
               logoPlaceholder: `${import.meta.env.BASE_URL}images/image.png`,
               link: "https://shinagawa-startup.com/2025/",
             },
@@ -248,7 +241,7 @@ function App() {
         <Footer />
       </main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
