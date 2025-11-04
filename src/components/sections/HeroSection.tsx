@@ -19,7 +19,7 @@ const HeroSection = ({
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       aria-labelledby="hero-title"
       style={{
-        backgroundImage: "url(/images/hero-bg.png)",
+        backgroundImage: `url(${import.meta.env.BASE_URL}images/hero-bg.png)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

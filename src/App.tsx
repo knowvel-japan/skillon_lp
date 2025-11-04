@@ -39,21 +39,21 @@ function App() {
           problems={[
             {
               icon: AlertCircle,
-              iconPath: "/images/kyoikutanto.svg",
+              iconPath: `${import.meta.env.BASE_URL}images/kyoikutanto.svg`,
               title: "教育担当の負担",
               description:
                 "教育に時間を奪われて、本業に集中できていない。教材制作を行う余裕もない。",
             },
             {
               icon: Clock,
-              iconPath: "/images/ichininmae.svg",
+              iconPath: `${import.meta.env.BASE_URL}images/ichininmae.svg`,
               title: "若手が育たない",
               description:
                 "技能習得に時間がかかる。質問できず、自信をなくして辞めていく人も。",
             },
             {
               icon: Users,
-              iconPath: "/images/kyoiku.svg",
+              iconPath: `${import.meta.env.BASE_URL}images/kyoiku.svg`,
               title: "不揃いな教育",
               description:
                 "現場任せの教育で標準化できていない。若手が育っているか判断できない。",
@@ -79,19 +79,19 @@ function App() {
         <FeaturesSection
           features={[
             {
-              iconSrc: "/images/douga.svg",
+              iconSrc: `${import.meta.env.BASE_URL}images/douga.svg`,
               title: "学習教材の自動生成",
               description:
                 "作業風景を撮影すると、AIがベテランの動きを解析し、研修動画を生成します。作業マニュアルも生成可能です。",
             },
             {
-              iconSrc: "/images/mentor.svg",
+              iconSrc: `${import.meta.env.BASE_URL}images/mentor.svg`,
               title: "AIメンタリング機能",
               description:
                 "AIメンターが疑問の解消や、クイズを通した理解定着の判断、ベテランとの違いを説明します。",
             },
             {
-              iconSrc: "/images/data.svg",
+              iconSrc: `${import.meta.env.BASE_URL}images/data.svg`,
               title: "教材自動更新・補足",
               description:
                 "学習者の理解度や各種データに応じて、教材の再編集や補足動画の生成を自動的に行います。",
@@ -204,7 +204,7 @@ function App() {
               year: "2025年",
               description:
                 "品川区の社会課題解決を目指すスタートアップ支援プログラムに採択",
-              logoPlaceholder: "/images/image.png",
+              logoPlaceholder: `${import.meta.env.BASE_URL}images/image.png`,
               link: "https://shinagawa-startup.com/2025/",
             },
           ]}
