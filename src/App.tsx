@@ -24,9 +24,9 @@ function App() {
         <HeroSection
           title={
             <>
-              現場の暗黙知を、
+              撮るだけで、
               <br />
-              誰でも学べる形式知へ
+              誰もが即戦力。
             </>
           }
           subtitle="スマートフォンで撮影した作業風景から、自動的に研修動画や学習教材を生成。現場教育の負担を軽減し、技術継承を加速します。"
@@ -69,8 +69,8 @@ function App() {
             "教育コンテンツの標準化",
           ]}
           imagePlaceholder="solution-visual"
-          beforeVideoUrl="https://www.youtube.com/embed/AETVeN4G6O0"
-          afterVideoUrl="https://www.youtube.com/embed/Crf94djix8g"
+          beforeVideoUrl="https://www.youtube.com/embed/oY6BLtmDHD8"
+          afterVideoUrl="https://www.youtube.com/embed/J_ea7kIeeo8"
         />
 
         {/* Features Section */}

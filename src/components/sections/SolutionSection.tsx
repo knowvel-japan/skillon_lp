@@ -157,6 +157,45 @@ const SolutionSection = ({
             </div>
           </div>
         </AnimatedSection>
+
+        {/* AI Education Section */}
+        <AnimatedSection animation="slideUp" delay={0.4}>
+          <div className="mt-12 max-w-6xl mx-auto">
+            <div className="ai-education-container flex flex-col items-center gap-8">
+              <style>{`
+                @media (min-width: 420px) {
+                  .ai-education-container {
+                    flex-direction: row;
+                    gap: 3rem;
+                  }
+                }
+              `}</style>
+
+              {/* Image */}
+              <div className="flex-1 min-w-0 w-full flex justify-center">
+                <div className="w-full max-w-56">
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/IMG_4033.PNG`}
+                    alt="現場教育のAI化"
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
+                </div>
+              </div>
+
+              {/* Text Content */}
+              <div className="flex-1 min-w-0 w-full">
+                <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#3791e2] mb-4">
+                  現場教育のAI化
+                </h3>
+                <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
+                  予習、作業中、教材はいつでも確認可能。<span className="font-bold text-[#f97d0b]">言語の壁を超えて</span>、音や映像をもとに<span className="font-bold text-[#f97d0b]">暗黙知を学習</span>したAIメンターが不明点に回答します。
+                  <br />
+                  現場教育は<span className="font-bold text-[#f97d0b]">AIが行う時代へ</span>。
+                </p>
+              </div>
+            </div>
+          </div>
+        </AnimatedSection>
       </div>
     </section>
   );
